@@ -83,9 +83,10 @@
 @media(min-width:1024px) {
     .input textarea{
          margin-left: 150px;
-         margin-top: 20px;
+         margin-top: 0;
          width: auto;
-         
+         font:1.1em sans-serif;
+
     }
    
     
@@ -95,7 +96,7 @@
 }
 
 .main-buttons-container {
-    background-color: orange;
+    
     flex: 3;
     display: flex;
     flex-direction: column;
@@ -103,11 +104,26 @@
 }
 
 .tip {
-    background-color: greenyellow;
+    height: 30px;
     flex: 1
+    
 }
-
+.tip label{
+    font: .8em sans-serif;
+    color:dimgrey;
+   
+    
+}
+.tip label span{
+    font-size: 1.5em;
+}
+@media(min-width:1024px) {
+    .tip label{
+        margin-left: 150px;
+    }
+}
 .buttons {
-    background-color: greenyellow;
     flex: 6
+
 }
+    
