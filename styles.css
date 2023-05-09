@@ -76,7 +76,7 @@
     border: none;
     font: 1.5em sans-serif;
    color: #0A3871;
-   margin-left: 20px;
+   margin-left: 10px;
    margin-top:35px
 
 }
@@ -105,7 +105,8 @@
 
 .tip {
     height: 30px;
-    flex: 1
+    flex: 1;
+    margin-left: 10px;
     
 }
 .tip label{
