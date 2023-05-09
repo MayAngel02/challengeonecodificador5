@@ -107,7 +107,12 @@
     height: 30px;
     flex: 1;
     margin-left: 10px;
-    
+    display: flex;
+    align-items: center;
+}
+.tip .icon span{
+    font-size: 1em;
+   
 }
 .tip label{
     font: .8em sans-serif;
@@ -115,11 +120,9 @@
    
     
 }
-.tip label span{
-    font-size: 1.5em;
-}
+
 @media(min-width:1024px) {
-    .tip label{
+    .tip {
         margin-left: 150px;
     }
 }
