@@ -21,6 +21,7 @@
 
 @media(min-width:1024px) {
     .main-input {
+        flex: 2;
         min-height: 100vh;
     }
 }
@@ -30,7 +31,9 @@
     min-height: 35vh;
     display: flex;
     justify-content: center;
+    
 }
+
 
 .output {
     background-color: rgb(229, 238, 247);
@@ -48,12 +51,15 @@
 
 @media(min-width:1024px) {
     .output {
-        width: 40%;
+        width: 70%;
         height: 90%;
         display: flex;
         justify-content:center;
         align-items: center;
         flex-direction: column;
+        margin-top: 15px;
+        margin-bottom: 15px;
+
     }
 }
 
@@ -87,6 +93,9 @@
 @media(min-width:1024px) {
     .output-container {
         min-height: 100vh;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 25px;
     }
 }
 
@@ -122,6 +131,7 @@
     min-height: 220px;
 }
 
+
 .input textarea {
     width: 100%;
     min-height: 100%;
@@ -140,6 +150,7 @@
         margin-top: 0;
         width: auto;
         font: 1.1em sans-serif;
+        
 
     }
 
@@ -179,6 +190,7 @@
 @media(min-width:1024px) {
     .tip {
         margin-left: 150px;
+        margin-top: 105px;
     }
 }
 
@@ -188,9 +200,22 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
-
+    
 }
+@media(min-width:1024px){
+    .buttons{
+        
+        flex-direction: row;
+        align-items: center;
+        margin-left: 150px;
+        width: 85%;
+        height: 35px;
+        border-radius:5%;
+    }
+        
+    
+}
+
 
 .boton {
     font: 10px sans-serif;
@@ -207,7 +232,14 @@
     margin-top: 5px;
 
 }
-
+@media(min-width:1024px){
+    .encriptar-btn{
+        
+        margin-right: 15px;
+        
+        
+    }
+}
 .desencriptar-btn {
     color: #0A3871;
     background-color: white;
