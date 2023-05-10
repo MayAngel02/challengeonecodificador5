@@ -26,9 +26,62 @@
 }
 
 .output-container {
-    background-color: #0b704a;
     flex: 1;
     min-height: 35vh;
+    display: flex;
+    justify-content: center;
+}
+
+.output {
+    background-color: rgb(229, 238, 247);
+    width: 80%;
+    height: 40%;
+    margin-bottom: 40px;
+    margin-top: 45px;
+    border-radius: 25px;
+    text-align: center;
+    font: menu;
+
+
+
+}
+
+@media(min-width:1024px) {
+    .output {
+        width: 40%;
+        height: 90%;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.output-tittle {
+    font-size: 20px;
+}
+
+.output-content {
+    font-size: 15px;
+
+    color: grey;
+}
+
+.img-search {
+    display: none;
+
+}
+
+@media(min-width:1024px) {
+    .img-search {
+        display: flex;
+    }
+    .img-search img{
+    width: 80%;
+    margin:0 auto;
+
+
+    }
 }
 
 @media(min-width:1024px) {
@@ -66,8 +119,9 @@
 }
 
 .input {
-    flex: 6;
+    min-height: 220px;
 }
+
 .input textarea {
     width: 100%;
     min-height: 100%;
@@ -75,29 +129,28 @@
     outline: none;
     border: none;
     font: 1.5em sans-serif;
-   color: #0A3871;
-   margin-left: 10px;
-   margin-top:35px
-
+    color: #0A3871;
+    margin-left: 10px;
+    margin-top: 35px
 }
+
 @media(min-width:1024px) {
-    .input textarea{
-         margin-left: 150px;
-         margin-top: 0;
-         width: auto;
-         font:1.1em sans-serif;
+    .input textarea {
+        margin-left: 150px;
+        margin-top: 0;
+        width: auto;
+        font: 1.1em sans-serif;
 
     }
-   
-    
+
+
 }
-.input textarea::placeholder{
+
+.input textarea::placeholder {
     color: #0A3871;
 }
 
 .main-buttons-container {
-    
-    flex: 3;
     display: flex;
     flex-direction: column;
 
@@ -110,15 +163,17 @@
     display: flex;
     align-items: center;
 }
-.tip .icon span{
+
+.tip .icon span {
     font-size: 1em;
-   
+
 }
-.tip label{
+
+.tip label {
     font: .8em sans-serif;
-    color:dimgrey;
-   
-    
+    color: dimgrey;
+
+
 }
 
 @media(min-width:1024px) {
@@ -126,8 +181,36 @@
         margin-left: 150px;
     }
 }
+
 .buttons {
-    flex: 6
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
 
 }
-    
+
+.boton {
+    font: 10px sans-serif;
+    width: 85%;
+    height: 45px;
+    border-radius: 22px;
+
+}
+
+.encriptar-btn {
+    color: white;
+    background-color: #0A3871;
+    margin-bottom: 10px;
+    margin-top: 5px;
+
+}
+
+.desencriptar-btn {
+    color: #0A3871;
+    background-color: white;
+    border-width: 1.5px;
+
+}
