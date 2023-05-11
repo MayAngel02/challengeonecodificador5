@@ -19,7 +19,7 @@
         </div>
         <div class="input-container">
             <div class="input">
-                <textarea placeholder="Ingrese texto aqui" rows="2.5"></textarea>
+                <textarea id="textToEncript" placeholder="Ingrese texto aqui" rows="2.5"></textarea>
             </div>
             <div class="main-buttons-container">
             
@@ -29,7 +29,7 @@
                     <label>  solo letras minusculas y sin acentos </label>
                 </div>
                 <div class="buttons">
-                    <input class="boton encriptar-btn" type="button" value="Encriptar">
+                    <input onclick="encriptText()" class="boton encriptar-btn" type="button" value="Encriptar">
                     <input class="boton desencriptar-btn " type="button" value="Desencriptar">
                 </div>
             </div>
