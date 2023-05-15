@@ -99,6 +99,26 @@
     }
 }
 
+
+.output-msg{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.copiar-btn{
+
+    width: 60% !important;
+    
+}
+@media(min-width:1024px) {
+    .copiar-btn{
+        width: 85% !important;
+        height: 35px;
+        border-radius:5%;
+    }
+}
 .header-container {
     flex: 1;
 }
@@ -189,8 +209,8 @@
 
 @media(min-width:1024px) {
     .tip {
-        margin-left: 150px;
-        margin-top: 105px;
+        margin: 105px 0px 0px 150px;
+     
     }
 }
 
@@ -228,8 +248,8 @@
 .encriptar-btn {
     color: white;
     background-color: #0A3871;
-    margin-bottom: 10px;
-    margin-top: 5px;
+    margin: 5px 0px  10px 0px;
+    
 
 }
 @media(min-width:1024px){
@@ -240,9 +260,21 @@
         
     }
 }
-.desencriptar-btn {
+.secondary-btn {
     color: #0A3871;
     background-color: white;
     border-width: 1.5px;
 
+}
+
+.msg-encripted{
+    margin: 25px;
+    width: 80%;
+}
+
+@media(min-width:1024px){
+    .msg-encripted{
+    background: blue;
+    min-height: 10px ;
+}
 }

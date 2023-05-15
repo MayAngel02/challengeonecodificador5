@@ -22,28 +22,32 @@
                 <textarea id="textToEncript" placeholder="Ingrese texto aqui" rows="2.5"></textarea>
             </div>
             <div class="main-buttons-container">
-            
+
                 <div class="tip">
                     <div class="icon"><span>&#x1f6c8;</span></div>
-                    
-                    <label>  solo letras minusculas y sin acentos </label>
+
+                    <label> solo letras minusculas y sin acentos </label>
                 </div>
                 <div class="buttons">
                     <input onclick="encriptText()" class="boton encriptar-btn" type="button" value="Encriptar">
-                    <input class="boton desencriptar-btn " type="button" value="Desencriptar">
+                    <input onclick="desencriptar()" class="boton secondary-btn" type="button" value="Desencriptar">
                 </div>
             </div>
         </div>
     </div>
     <div class="output-container">
-        <div class="output"> 
+        <div id="outputAlt" class="output">
             <div class="img-search">
-               <img src="./img/im.png" alt="en busqueda"> 
+                <img src="./img/im.png" alt="en busqueda">
             </div>
             <div>
-            <h1 class="output-tittle">    Ningún mensaje fue encontrado     </h1>
-            <p class="output-content"> Ingresa el texto que deseas encriptar o desencriptar </p>
+                <h1 class="output-tittle"> Ningún mensaje fue encontrado </h1>
+                <p class="output-content"> Ingresa el texto que deseas encriptar o desencriptar </p>
             </div>
+        </div>
+        <div id="outputMsg" class="output-msg">
+             <div class="msg-encripted"><p id="msgEncripted"></p></div> 
+            <input onclick="" class="boton secondary-btn copiar-btn" type="button" value=Copiar">
         </div>
 
     </div>

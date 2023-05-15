@@ -2,8 +2,11 @@ function encriptText(e) {
     let text = document.getElementById("textToEncript").value;
     let textArray = createLettersArray(text);
     let textArrayMessy = messyArray(textArray);
-    let textMessy= generateTextMessy(textArrayMessy);
+    let textMessy= generateTextMessy(textArrayMessy); 
+    hiddenElement("outputAlt");
     console.log(textMessy);
+    showElementWithFlex("outputMsg");
+    showTextInElement("msgEncripted",textMessy);
 }
 
 const createLettersArray = (text) => {
@@ -29,4 +32,19 @@ const generateTextMessy=(textArrayMessy)=>{
         textMessy = textMessy + textArrayMessy[i].letra
     }
     return textMessy;
+}
+
+const hiddenElement=(id)=>{
+    let element = document.getElementById(id);
+    element.style.display="none";
+}
+
+const showElementWithFlex = (id) => {
+    let element = document.getElementById(id);
+    element.style.display="flex";
+}
+
+const showTextInElement = (id, text) => {
+    const pNode = document.getElementById(id);
+    pNode.textContent = text;
 }
