@@ -48,3 +48,11 @@ const showTextInElement = (id, text) => {
     const pNode = document.getElementById(id);
     pNode.textContent = text;
 }
+
+function copyToClipBoard(){
+   
+    var content= document.getElementById('msgEncripted');
+    content.select();
+    document.execCommand('copy');
+    
+}

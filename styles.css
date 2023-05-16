@@ -285,4 +285,15 @@
         font-size: 15px;
     }
 }
+.msg-encripted textarea{
+    resize: none;
+    width: 100%!important;
+    height: 100%!important;
+    border:none!important;
+    font:1.5em sans-serif!important;
+    
 
+}
+.msg-encripted textarea:focus-visible{
+    outline: none;
+}
