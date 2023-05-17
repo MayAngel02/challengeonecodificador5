@@ -29,15 +29,15 @@
                     <label> solo letras minusculas y sin acentos </label>
                 </div>
                 <div class="buttons">
-                    <input onclick="encriptText()" class="boton encriptar-btn" type="button" value="Encriptar">
-                    <input onclick="desencriptar()" class="boton secondary-btn" type="button" value="Desencriptar">
+                    <input onclick="encrypt()" class="boton encriptar-btn" type="button" value="Encriptar">
+                    <input onclick="decrypt()" class="boton secondary-btn" type="button" value="Desencriptar">
                 </div>
             </div>
         </div>
     </div>
     <div class="output-container">
         <div class="output">
-            <div id="outputAlt">
+            <div id="outputAlt" style="display: flex; flex-direction: column;">
                 <div class="img-search">
                     <img src="./img/im.png" alt="en busqueda">
                 </div>
@@ -47,7 +47,7 @@
                 </div>
             </div>
 
-            <div id="outputMsg" class="output-msg">
+            <div id="outputMsg" class="output-msg" style="display: none;">
                 <div class="msg-encripted">
                     <textarea id="msgEncripted"></textarea>
                 </div >

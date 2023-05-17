@@ -1,47 +1,64 @@
-function encriptText(e) {
+function encrypt() {
     let text = document.getElementById("textToEncript").value;
-    let textArray = createLettersArray(text);
-    let textArrayMessy = messyArray(textArray);
-    let textMessy= generateTextMessy(textArrayMessy); 
+    let textMessy = encryptText(text);
     hiddenElement("outputAlt");
-    console.log(textMessy);
     showElementWithFlex("outputMsg");
-    showTextInElement("msgEncripted",textMessy);
+    showTextInElement("msgEncripted", textMessy);
+    document.getElementById("textToEncript").value = "";
 }
 
-const createLettersArray = (text) => {
-    let letras = [];
-    let textArray = new String(text);
+function decrypt() {
+    let text = document.getElementById("textToEncript").value;
+    var textDesencripted = decryptText(text);
+    hiddenElement("outputAlt");
+    showElementWithFlex("outputMsg");
+    showTextInElement("msgEncripted", textDesencripted);
+}
 
-    for (let i = 0; i < textArray.length; i++) {
-        letras.push({
-            letra: textArray[i],
-            position: i
-        })
+const encryptText = (text) => {
+    let words = text.split(' ');
+    let newWords = [];
+
+    for (let word of words) {
+        word = word.replaceAll('e', 'enter');
+        word = word.replaceAll('i', 'imes');
+        word = word.replaceAll('a', 'ai');
+        word = word.replaceAll('o', 'ober');
+        word = word.replaceAll('u', 'ufat');
+
+        newWords.push(word);
     }
-    return letras;
 
+    const textEncripted = newWords.join(' ');
+    return textEncripted;
 }
 
-const messyArray=(textArray)=>{
-    return textArray.sort(function () { return Math.random() - 0.5 });
-}
-const generateTextMessy=(textArrayMessy)=>{
-    let textMessy = "";
-    for (let i = 0; i < textArrayMessy.length; i++) {
-        textMessy = textMessy + textArrayMessy[i].letra
+const decryptText = (text) => {
+    let words = text.split(" ");
+    let newWords = [];
+
+    for (let word of words) {
+        word = word.replaceAll('enter', 'e');
+        word = word.replaceAll('imes', 'i');
+        word = word.replaceAll('ai', 'a');
+        word = word.replaceAll('ober', 'o');
+        word = word.replaceAll('ufat', 'u');
+        newWords.push(word);
     }
-    return textMessy;
+
+    const textDesencripted = newWords.join(' ');
+
+    return textDesencripted;
 }
 
-const hiddenElement=(id)=>{
+const hiddenElement = (id) => {
     let element = document.getElementById(id);
-    element.style.display="none";
+    element.style.display = "none";
 }
 
 const showElementWithFlex = (id) => {
     let element = document.getElementById(id);
-    element.style.display="flex";
+    element.style.display = "flex";
 }
 
 const showTextInElement = (id, text) => {
@@ -49,10 +66,9 @@ const showTextInElement = (id, text) => {
     pNode.textContent = text;
 }
 
-function copyToClipBoard(){
-   
-    var content= document.getElementById('msgEncripted');
+function copyToClipBoard() {
+    var content = document.getElementById('msgEncripted');
     content.select();
     document.execCommand('copy');
-    
+    document.getElementById("msgEncripted").textContent = "";
 }
