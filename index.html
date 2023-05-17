@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+</head>
+
+<body class="main-container">
+    <div class="main-input">
+        <div class="header-container">
+            <div class="logo">
+                <img src="./img/aaa.png" alt="logo">
+            </div>
+        </div>
+        <div class="input-container">
+            <div class="input">
+                <textarea id="textToEncript" placeholder="Ingrese texto aqui" rows="2.5"></textarea>
+            </div>
+            <div class="main-buttons-container">
+
+                <div class="tip">
+                    <div class="icon"><span>&#x1f6c8;</span></div>
+
+                    <label> solo letras minusculas y sin acentos </label>
+                </div>
+                <div class="buttons">
+                    <input onclick="encrypt()" class="boton encriptar-btn" type="button" value="Encriptar">
+                    <input onclick="decrypt()" class="boton secondary-btn" type="button" value="Desencriptar">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="output-container">
+        <div class="output">
+            <div id="outputAlt" style="display: flex; flex-direction: column;">
+                <div class="img-search">
+                    <img src="./img/im.png" alt="en busqueda">
+                </div>
+                <div>
+                    <h1 class="output-tittle"> Ningún mensaje fue encontrado </h1>
+                    <p class="output-content"> Ingresa el texto que deseas encriptar o desencriptar </p>
+                </div>
+            </div>
+
+            <div id="outputMsg" class="output-msg" style="display: none;">
+                <div class="msg-encripted">
+                    <textarea id="msgEncripted"></textarea>
+                </div >
+                <input id="Copiar" onclick="copyToClipBoard()" class="boton secondary-btn copiar-btn" type="button" value="Copiar">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

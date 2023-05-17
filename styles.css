@@ -1,0 +1,298 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+@media(min-width:1024px) {
+    .main-container {
+        flex-direction: row;
+    }
+}
+
+.main-input {
+    flex: 1;
+    min-height: 65vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #F3F5FC;
+}
+
+@media(min-width:1024px) {
+    .main-input {
+        flex: 2;
+        min-height: 100vh;
+    }
+}
+
+.output-container {
+    flex: 1;
+    min-height: 35vh;
+    display: flex;
+    justify-content: center;
+    background-color: #F3F5FC;
+}
+
+
+.output {
+    background-color: white;
+    width: 80%;
+    height: 40%;
+    margin-bottom: 40px;
+    margin-top: 45px;
+    border-radius: 25px;
+    text-align: center;
+    font: menu;
+}
+
+@media(min-width:1024px) {
+    .output {
+        width: 70%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-right: 35px;
+    }
+}
+
+.output-tittle {
+    font-size: 20px;
+}
+
+.output-content {
+    font-size: 15px;
+    color: grey;
+}
+
+.img-search {
+    display: none;
+}
+
+@media(min-width:1024px) {
+    .img-search {
+        display: flex;
+    }
+
+    .img-search img {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width:1024px) {
+    .output-container {
+        min-height: 100vh;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+
+.output-msg {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media(min-width:1024px) {
+    .output-msg {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.copiar-btn {
+    width: 60% !important;
+}
+
+@media(min-width:1024px) {
+    .copiar-btn {
+        width: 85% !important;
+        border-radius: 5%;
+    }
+}
+
+.header-container {
+    flex: 1;
+}
+
+.header-container img {
+    width: 22px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+@media(min-width:1024px) {
+    .header-container img {
+        width: 20px;
+        height: 30px;
+        margin-bottom: 30px;
+        margin-top: 25px;
+        margin-left: 50px;
+    }
+}
+
+.input-container {
+    flex: 10;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input {
+    min-height: 220px;
+}
+
+@media(min-width:1024px) {
+    .input {
+        min-height: 70%;
+        margin-left: 15%;
+    }
+}
+
+
+.input textarea {
+    width: 100%;
+    min-height: 100%;
+    resize: none;
+    outline: none;
+    border: none;
+    font: 1.5em sans-serif;
+    color: #0A3871;
+    margin-left: 10px;
+    margin-top: 35px;
+    background-color: #F3F5FC;
+}
+
+@media(min-width:1024px) {
+    .input textarea {
+        margin-top: 0;
+        width: 85%;
+        font: 1.5em sans-serif;
+    }
+}
+
+.input textarea::placeholder {
+    color: #0A3871;
+}
+
+.main-buttons-container {
+    display: flex;
+    flex-direction: column;
+}
+@media(min-width:1024px) {
+    .main-buttons-container{
+        min-height: 30%;
+        width: 85%;
+        margin-left: 15%;
+    }
+}
+
+.tip {
+    height: 30px;
+    flex: 1;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.tip .icon span {
+    font-size: 1em;
+
+}
+
+.tip label {
+    font: .8em sans-serif;
+    color: dimgrey;
+}
+
+@media(min-width:1024px) {
+    .tip {
+        margin: 10px 0px 0px 10px;
+    }
+}
+
+.buttons {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+@media(min-width:1024px) {
+    .buttons {
+        flex-direction: row;
+        align-items: center;
+        margin-left: 10px;
+        width: 80%;
+        height: 35px;
+        border-radius: 5%;
+    }
+}
+
+
+.boton {
+    font: 12px sans-serif;
+    width: 85%;
+    height: 45px;
+    border-radius: 22px;
+}
+
+@media(min-width:1024px) {
+    .boton {
+        font: 12px sans-serif;
+        width: 85%;
+        height: 45px;
+        border-radius: 22px;
+    }
+}
+
+.encriptar-btn {
+    color: white;
+    background-color: #0A3871;
+    margin: 5px 0px 10px 0px;
+}
+
+@media(min-width:1024px) {
+    .encriptar-btn {
+        margin-right: 15px;
+    }
+}
+
+.secondary-btn {
+    color: #0A3871;
+    background-color: white;
+    border-width: 1.5px;
+    border-color: #0A3871;
+}
+
+.msg-encripted {
+    margin: 25px;
+    width: 80%;
+}
+
+@media(min-width:1024px) {
+    .msg-encripted {
+        min-height: 80%;
+        font-size: 15px;
+    }
+}
+.msg-encripted textarea{
+    resize: none;
+    width: 100%!important;
+    height: 100%!important;
+    border:none!important;
+    font:1.5em sans-serif!important;
+    
+
+}
+.msg-encripted textarea:focus-visible{
+    outline: none;
+}
